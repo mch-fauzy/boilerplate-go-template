@@ -1,0 +1,28 @@
+# Ignore vendor, binary executable, and env file
+vendor/
+engine
+.env
+
+# Ignore VS Code stuff
+.vscode/*
+!.vscode/launch.json
+.idea/*
+
+
+# Ignore automatically generated Swagger docs
+/docs*
+
+# Ignore Air (live reload) stuff
+.air.toml
+tmp/
+
+# Ignore other binaries
+bin/
+
+# Ignore generated wiring file
+wire_gen.go
+
+# Ignore mock and test files
+# *mock.go
+**/mock*
+.cover

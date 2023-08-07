@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go_api
+    ports:
+      - 9090:9090
+    volumes:
+      - ./.env:/app/.env
